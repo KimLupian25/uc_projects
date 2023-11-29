@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programmers Survey Form</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <div id="heading">
+    <h1 id=title>Angela Lauren's Survey Form</h1>
+    <p id="description">We love to know your suggestions and your comments about our shop!</p>
+    </div>
+    <div id="main">
+        <form id="survey-form">
+        <div id="input-fields">
+            <label id="name-label"><b>Name:</b></label>
+            <input id="name" type="name" name="name" class="form" required placeholder="Full Name"><br>
+            <br>
+            <label id="email-label"><b>Email:</b></label>
+            <input id="email" type="email" name="email" class="form" required placeholder="example@mail.com"><br>
+            <br>
+            <label id="number-label"><b>Age:</b></label>
+            <input id="number" type="number" name="number" class="form" min="5" max="99" placeholder="12+">
+         </div>
+         <div id="dropdown-div"><br>
+            <label id="dropdown-label"><strong>Occupation: </strong></label><br>
+            <select id="dropdown" name="code-lang" class="form">
+                <option value="Student">Student</option>
+                <option value="Employed">Employed</option>
+                <option value="Unemployed">Unemployed</option>
+            </select>
+         </div>
+         <div id="button-area">
+             <br>
+            <label id="job-label"><b>How satisfied are you width our product/service?</b></label><br>
+            <input type="radio" class="radio-inline" name="answer" value="very-much" checked> Very much<br>
+            <input type="radio" class="radio-inline" name="answer" value="satisfied"> Satisfied<br>
+            <input type="radio" class="radio-inline" name="answer" value="neutral"> Neutral<br>
+            <input type="radio" class="radio-inline" name="answer" value="dissatisfied"> Dissatisfied
+          </div>
+          <div id="button-area"><br>
+            <label id="os-label"><b>What products do you like in our shop? </b></label><br>
+            <input type="checkbox" name="os1" value="clothes" checked> Clothes<br>
+            <input type="checkbox" name="os2" value="accessories"> Accessories<br>
+            <input type="checkbox" name="os3" value="stationery"> Stationery<br>
+          </div>
+
+          <div id="dropdown"><br><br>
+            <label id="dropdown-label"><strong>What things would you like to add to our shop? </strong></label><br>
+            <select id="dropdown" name="code-lang" class="form"><br><br>
+                <option value="bags">Bags</option>
+                <option value="shoes">Shoes</option>
+                <option value="appliances">Appliances</option>
+            </select>
+         </div>
+          <div id="button-area"><br><br>
+            <label id="os-label"><b>How likely are you to recommend us to others:</b></label><br>
+            <input type="checkbox" name="tech1" value="definitely"> Definitely<br>
+            <input type="checkbox" name="tech2" value="likely-to"> Likely to<br>
+            <input type="checkbox" name="tech3" value="neutral"> Neutral<br>
+            <input type="checkbox" name="tech3" value="unlikely-to"> Unlikely to<br>
+          </div>
+
+
+          <div id="ending"><br><br>
+            <label id="comments-label">Do you have any suggestion about this survey?</label><br>
+            <textarea style= height:120px;" class="form" placeholder="Please feel free to write a review..."></textarea><br><br>
+            <input id="submit" type="submit"  class="form">
+          </div>
+        </form>
+    </div>
+
+</body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>
